@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
-@RequestMapping
+@RequestMapping("/test")
 public class RestApiController {
 
    
