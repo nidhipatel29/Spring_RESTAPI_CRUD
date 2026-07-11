@@ -11,6 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 @RestController
@@ -34,5 +37,10 @@ public class StudentRestController {
         return list;
     } 
     
+    @GetMapping("student/{studentId}")
+    public Student getStudentById(@PathVariable int studentId){
+       
+        return list.get(studentId);
+    }
 
 }
